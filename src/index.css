@@ -225,3 +225,29 @@ figure {
   color: white;
   background-color: lightseagreen;
 }
+
+.review-field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.submit-review {
+  margin-left: 42%;
+  width: 100px;
+}
+
+.reviews {
+  margin-left: 30px;
+}
+
+.reviewed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0 0.2em;
+  background-color: transparent;
+}

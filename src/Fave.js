@@ -11,8 +11,8 @@ export default function Fave(props) {
 //   }
 
   const handleClick = (e) => {
-      props.onFaveToggle()
-      e.stopPropagation()
+    props.onFaveToggle()
+    e.stopPropagation()
   }
 
 

@@ -14,7 +14,7 @@ export default class App extends Component {
     this.state = {
        films: TMDB.films,
        faves: [],
-       current: {}
+       current: {},
     }
   }
 
@@ -53,7 +53,7 @@ export default class App extends Component {
     return (
       <div className="film-library">
         <FilmListing films={this.state.films} faves={this.state.faves} onFaveToggle={this.handleFaveToggle} handleDetailsClick={this.handleDetailsClick}/>
-        <FilmDetails film={this.state.current}/>
+        <FilmDetails film={this.state.current} faves={this.state.faves} films={this.state.films}/>
       </div>
     )
   }

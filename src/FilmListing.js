@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FilmFilter from "./FilmListingFilter";
 import FilmRow from "./FilmRow";
 
 export default class FilmListing extends Component {
@@ -7,7 +8,7 @@ export default class FilmListing extends Component {
     super(props)
   
     this.state = {
-       filter: 'all'
+       filter: FilmFilter.favFilter
     }
   }
 
@@ -48,9 +49,6 @@ export default class FilmListing extends Component {
         />
         )
     });
-
-    console.log("faveFilms:", faveFilms)
-    console.log("filter state:", this.state.filter)
 
     if (this.state.filter==='all'){
         return (
